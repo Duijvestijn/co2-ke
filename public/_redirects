@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+# Language detection: Swahili browsers → /sw, everyone else → /en
+/  /sw  302  Language=sw
+/  /en  302

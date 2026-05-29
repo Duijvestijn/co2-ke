@@ -9,21 +9,21 @@ export default function Footer() {
   const nav = translations.nav[lang];
 
   return (
-    <footer className="bg-ke-night border-t border-white/[0.06] pt-14 pb-8">
+    <footer className="bg-ke-dark border-t border-white/[0.08] pt-14 pb-8">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="font-serif font-bold text-xl leading-none tracking-tight mb-2">
               <span className="text-ke-red">CO2</span>
-              <span className="text-ke-sand/60">.ke</span>
+              <span className="text-white/60">.ke</span>
             </div>
             <div className="text-ke-gold/70 text-xs tracking-widest mb-4">{t.tagline}</div>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="text-ke-sand text-xs font-semibold tracking-[0.15em] uppercase mb-4">
+            <h4 className="text-white/60 text-xs font-semibold tracking-[0.15em] uppercase mb-4">
               {lang === "sw" ? "Urambazaji" : "Navigation"}
             </h4>
             <ul className="space-y-2">
@@ -34,7 +34,7 @@ export default function Footer() {
                 { label: nav.contact, href: "#contact" },
               ].map(({ label, href }) => (
                 <li key={href}>
-                  <a href={href} className="text-ke-sand/40 hover:text-ke-red text-sm transition-colors">{label}</a>
+                  <a href={href} className="text-white/40 hover:text-ke-red text-sm transition-colors">{label}</a>
                 </li>
               ))}
             </ul>
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Standards */}
           <div>
-            <h4 className="text-ke-sand text-xs font-semibold tracking-[0.15em] uppercase mb-4">
+            <h4 className="text-white/60 text-xs font-semibold tracking-[0.15em] uppercase mb-4">
               {lang === "sw" ? "Viwango" : "Standards"}
             </h4>
             <ul className="space-y-2">
@@ -54,16 +54,16 @@ export default function Footer() {
               ].map(({ label, href }) => (
                 <li key={label}>
                   <a href={href} target="_blank" rel="noopener noreferrer"
-                    className="text-ke-sand/40 hover:text-ke-red text-sm transition-colors">{label}</a>
+                    className="text-white/40 hover:text-ke-red text-sm transition-colors">{label}</a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="text-ke-sand/30 text-xs">{t.copyright}</p>
-          <span className="text-ke-sand/20 text-xs">
+        <div className="border-t border-white/[0.08] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <p className="text-white/30 text-xs">{t.copyright}</p>
+          <span className="text-white/20 text-xs">
             {lang === "sw" ? "Inayoendeshwa na asili" : "Powered by nature"}
           </span>
         </div>

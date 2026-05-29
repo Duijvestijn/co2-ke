@@ -25,23 +25,19 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="bg-ke-night py-24 md:py-32">
+    <section id="projects" className="bg-ke-page py-24 md:py-32">
       <div ref={ref} className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <motion.div variants={FU(0)} initial="hidden" animate={inView ? "visible" : "hidden"}>
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-6 h-px bg-ke-red/50" />
-              <span className="text-xs tracking-[0.25em] uppercase text-ke-red/80 font-medium">{t.label}</span>
-              <span className="w-6 h-px bg-ke-red/50" />
-            </div>
+            <span className="text-xs tracking-[0.3em] uppercase text-ke-red font-bold inline-block mb-4">{t.label}</span>
           </motion.div>
           <motion.h2 variants={FU(0.08)} initial="hidden" animate={inView ? "visible" : "hidden"}
-            className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
+            className="font-serif text-5xl md:text-6xl font-bold text-ke-ink mb-4">
             {t.title}
           </motion.h2>
           <motion.p variants={FU(0.14)} initial="hidden" animate={inView ? "visible" : "hidden"}
-            className="text-ke-sand/55 leading-relaxed">
+            className="text-ke-muted leading-relaxed">
             {t.subtitle}
           </motion.p>
         </div>
@@ -50,22 +46,22 @@ export default function ProjectsSection() {
         <div className="grid sm:grid-cols-2 gap-5">
           {projects.map((p, i) => (
             <motion.div key={i} variants={FU(i * 0.1)} initial="hidden" animate={inView ? "visible" : "hidden"}
-              className="group rounded-3xl overflow-hidden bg-ke-dark border border-white/[0.05] hover:border-ke-green/25 transition-all">
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              className="group rounded-2xl overflow-hidden bg-white shadow-sm border border-black/[0.06] hover:shadow-xl transition-all">
+              {/* Image — h-72 */}
+              <div className="relative h-72 overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url(${PROJECT_IMAGES[i]})` }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-ke-dark via-ke-dark/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ke-dark/60 via-ke-dark/10 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full bg-ke-green/90 text-white text-[10px] font-bold tracking-wide uppercase">
+                  <span className="px-3 py-1 rounded-full bg-ke-red text-white text-[10px] font-bold tracking-wide uppercase">
                     {p.tag}
                   </span>
                 </div>
               </div>
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-serif text-xl font-bold text-white mb-3 group-hover:text-ke-green-light transition-colors">{p.title}</h3>
-                <p className="text-ke-sand/50 text-sm leading-relaxed">{p.desc}</p>
+                <h3 className="font-serif text-xl font-bold text-ke-ink mb-3 group-hover:text-ke-red transition-colors">{p.title}</h3>
+                <p className="text-ke-muted text-sm leading-relaxed">{p.desc}</p>
               </div>
             </motion.div>
           ))}

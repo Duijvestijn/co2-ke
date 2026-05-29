@@ -24,27 +24,25 @@ export default function WhatIsSection() {
   ];
 
   return (
-    <section id="what-is" className="bg-ke-night py-24 md:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-ke-red/[0.03] to-transparent pointer-events-none" />
+    <section id="what-is" className="bg-ke-page py-24 md:py-32 relative overflow-hidden">
       <div ref={ref} className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mb-16">
           <motion.div variants={FU(0)} initial="hidden" animate={inView ? "visible" : "hidden"}>
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-6 h-px bg-ke-red/50" />
-              <span className="text-xs tracking-[0.25em] uppercase text-ke-red/80 font-medium">{t.label}</span>
+              <span className="text-xs tracking-[0.3em] uppercase text-ke-red font-bold">{t.label}</span>
             </div>
           </motion.div>
           <motion.h2 variants={FU(0.08)} initial="hidden" animate={inView ? "visible" : "hidden"}
-            className="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+            className="font-serif text-5xl md:text-6xl font-bold text-ke-ink leading-tight mb-4">
             {t.title}
           </motion.h2>
           <motion.p variants={FU(0.14)} initial="hidden" animate={inView ? "visible" : "hidden"}
-            className="text-ke-gold font-serif text-lg italic mb-6">
+            className="text-ke-green font-serif text-lg italic mb-6">
             {t.subtitle}
           </motion.p>
           <motion.p variants={FU(0.2)} initial="hidden" animate={inView ? "visible" : "hidden"}
-            className="text-ke-sand/60 text-lg leading-relaxed">
+            className="text-ke-muted text-lg leading-relaxed">
             {t.intro}
           </motion.p>
         </div>
@@ -53,19 +51,21 @@ export default function WhatIsSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
           {steps.map((s, i) => (
             <motion.div key={i} variants={FU(i * 0.1)} initial="hidden" animate={inView ? "visible" : "hidden"}
-              className="p-6 rounded-2xl bg-ke-dark/60 border border-white/[0.05] hover:border-ke-red/25 transition-all group">
-              <div className="font-serif text-4xl font-bold text-ke-red/15 mb-4 leading-none">{s.n}</div>
-              <h3 className="font-serif text-base font-bold text-white mb-2 group-hover:text-ke-red transition-colors">{s.title}</h3>
-              <p className="text-ke-sand/45 text-xs leading-relaxed">{s.desc}</p>
+              className="p-6 rounded-2xl bg-white shadow-sm border border-black/[0.06] hover:shadow-lg transition-all group">
+              <div className="font-serif text-4xl font-bold text-ke-red/20 mb-4 leading-none">{s.n}</div>
+              <div className="w-8 h-1 bg-ke-red rounded mb-4" />
+              <h3 className="font-serif text-base font-bold text-ke-ink mb-2 group-hover:text-ke-red transition-colors">{s.title}</h3>
+              <p className="text-ke-muted text-xs leading-relaxed">{s.desc}</p>
             </motion.div>
           ))}
         </div>
 
         {/* Why it matters */}
         <motion.div variants={FU(0.3)} initial="hidden" animate={inView ? "visible" : "hidden"}
-          className="p-8 rounded-3xl bg-ke-green/[0.07] border border-ke-green/20">
-          <h3 className="text-ke-green-light font-bold text-sm mb-3">{t.whyTitle}</h3>
-          <p className="text-ke-sand/60 leading-relaxed">{t.whyDesc}</p>
+          className="p-8 rounded-3xl bg-ke-green/[0.06] border border-ke-green/20">
+          <div className="w-8 h-1 bg-ke-green rounded mb-4" />
+          <h3 className="text-ke-green font-bold text-sm mb-3">{t.whyTitle}</h3>
+          <p className="text-ke-muted leading-relaxed">{t.whyDesc}</p>
         </motion.div>
       </div>
     </section>

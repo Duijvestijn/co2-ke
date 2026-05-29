@@ -17,22 +17,18 @@ export default function StandardsSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section id="standards" className="bg-ke-dark py-24 md:py-32">
+    <section id="standards" className="bg-white py-24 md:py-32">
       <div ref={ref} className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <motion.div variants={FU(0)} initial="hidden" animate={inView ? "visible" : "hidden"}>
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-6 h-px bg-ke-red/50" />
-              <span className="text-xs tracking-[0.25em] uppercase text-ke-red/80 font-medium">{t.label}</span>
-              <span className="w-6 h-px bg-ke-red/50" />
-            </div>
+            <span className="text-xs tracking-[0.3em] uppercase text-ke-red font-bold inline-block mb-4">{t.label}</span>
           </motion.div>
           <motion.h2
             variants={FU(0.08)}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="font-serif text-4xl md:text-5xl font-bold text-white mb-4"
+            className="font-serif text-5xl md:text-6xl font-bold text-ke-ink mb-4"
           >
             {t.title}
           </motion.h2>
@@ -40,7 +36,7 @@ export default function StandardsSection() {
             variants={FU(0.14)}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="text-ke-sand/55 leading-relaxed"
+            className="text-ke-muted leading-relaxed"
           >
             {t.subtitle}
           </motion.p>
@@ -54,23 +50,23 @@ export default function StandardsSection() {
               variants={FU(i * 0.08)}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className="group flex flex-col gap-4 p-6 rounded-3xl bg-ke-night border border-white/[0.05] hover:border-ke-red/30 transition-all"
+              className="group flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-sm border border-black/[0.06] hover:shadow-lg transition-all"
             >
               {/* Code badge + stat pill row */}
               <div className="flex items-center justify-between gap-3">
-                <span className="px-3 py-1 rounded-full bg-ke-red/15 border border-ke-red/30 text-ke-red text-xs font-bold tracking-wider font-mono">
+                <span className="px-3 py-1 rounded-full bg-ke-red text-white text-xs font-bold tracking-wider font-mono">
                   {s.code}
                 </span>
-                <span className="px-2.5 py-1 rounded-full bg-ke-gold/10 border border-ke-gold/20 text-ke-gold text-[10px] font-medium tracking-wide whitespace-nowrap">
+                <span className="px-2.5 py-1 rounded-full bg-ke-gold/15 border border-ke-gold/30 text-ke-gold text-[10px] font-medium tracking-wide whitespace-nowrap">
                   {s.stat}
                 </span>
               </div>
               {/* Name */}
-              <h3 className="font-serif text-lg font-bold text-white leading-snug group-hover:text-ke-sand transition-colors">
+              <h3 className="font-serif text-lg font-bold text-ke-ink leading-snug group-hover:text-ke-red transition-colors">
                 {s.name}
               </h3>
               {/* Description */}
-              <p className="text-ke-sand/50 text-sm leading-relaxed flex-1">{s.desc}</p>
+              <p className="text-ke-muted text-sm leading-relaxed flex-1">{s.desc}</p>
             </motion.div>
           ))}
         </div>

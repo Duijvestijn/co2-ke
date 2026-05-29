@@ -4,13 +4,18 @@
   /* Kenya Carbon palette */
   --color-ke-dark:          #060A07;
   --color-ke-night:         #0A0F08;
-  --color-ke-red:           #B52A2A;
-  --color-ke-red-light:     #D44444;
+  --color-ke-red:           #C1331F;
+  --color-ke-red-light:     #E04530;
   --color-ke-gold:          #C49B1A;
-  --color-ke-green:         #1A6B3A;
-  --color-ke-green-light:   #28854A;
+  --color-ke-green:         #1D7A42;
+  --color-ke-green-light:   #2E9A56;
   --color-ke-sand:          #E8D5A0;
   --color-ke-cream:         #F5EDD8;
+  /* Impact/NGO Bold additions */
+  --color-ke-page:          #F5F1EB;
+  --color-ke-stone:         #ECEAD5;
+  --color-ke-ink:           #1C1A17;
+  --color-ke-muted:         #5C5850;
   --font-serif: var(--font-playfair);
   --font-sans:  var(--font-inter);
 }
@@ -18,8 +23,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: #060A07;
-  color: #E8D5A0;
+  background-color: #F5F1EB;
+  color: #1C1A17;
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,10 +32,10 @@ body {
 }
 
 ::selection {
-  background: rgba(181, 42, 42, 0.35);
-  color: #F5EDD8;
+  background: rgba(193, 51, 31, 0.25);
+  color: #1C1A17;
 }
 
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #060A07; }
-::-webkit-scrollbar-thumb { background: #B52A2A; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #F5F1EB; }
+::-webkit-scrollbar-thumb { background: #C1331F; border-radius: 3px; }

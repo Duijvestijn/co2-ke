@@ -234,6 +234,115 @@ export const translations = {
     },
   },
 
+  standards: {
+    en: {
+      label: "Certification & Verification",
+      title: "Kenya's Carbon Credits Meet the World's Highest Standards",
+      subtitle: "Every project we register is independently verified by internationally recognised certification bodies.",
+      standards: [
+        { code: "VCS", name: "Verra Verified Carbon Standard", desc: "The world's most widely used voluntary carbon standard, used by 40+ registered Kenyan projects generating high-integrity nature-based credits.", stat: "40+ Kenya projects" },
+        { code: "GS", name: "Gold Standard", desc: "Premium certification ensuring measurable sustainable development co-benefits for Kenyan communities alongside verified carbon reductions.", stat: "SDG co-benefits" },
+        { code: "CCB", name: "Climate, Community & Biodiversity", desc: "Additional certification verifying that projects deliver net positive impacts on Kenya's unique ecosystems and local communities.", stat: "Biodiversity verified" },
+        { code: "A6", name: "Article 6 — Paris Agreement", desc: "Kenya was one of the first African nations to ratify Article 6 provisions, enabling sovereign carbon credit exports under the Paris Agreement.", stat: "Kenya pioneered A6" },
+        { code: "REDD+", name: "REDD+ Framework", desc: "UN-backed framework for Reducing Emissions from Deforestation and Forest Degradation — Kenya's Rift Valley forests are among Africa's most eligible REDD+ landscapes.", stat: "UN-backed framework" },
+        { code: "NDC", name: "National Determined Contribution", desc: "Kenya's enhanced 2030 NDC commits to 32% emission reduction, creating strong government alignment for voluntary and compliance carbon market development.", stat: "32% reduction target" },
+      ],
+    },
+    sw: {
+      label: "Uthibitishaji & Uhakiki",
+      title: "Mikopo ya Kaboni ya Kenya Inakidhi Viwango vya Juu Zaidi Duniani",
+      subtitle: "Kila mradi tunaorekebisha unakaguliwa kwa kujitegemea na vyombo vya uthibitishaji vinavyotambuliwa kimataifa.",
+      standards: [
+        { code: "VCS", name: "Verra Verified Carbon Standard", desc: "Kiwango cha kawaida cha kaboni cha hiari kinachotumika zaidi duniani, kinachotumiwa na miradi zaidi ya 40 iliyosajiliwa Kenya.", stat: "Miradi 40+ Kenya" },
+        { code: "GS", name: "Gold Standard", desc: "Uthibitishaji wa hali ya juu unaohakikisha manufaa ya maendeleo endelevu yanayopimika kwa jamii za Kenya.", stat: "Manufaa ya SDG" },
+        { code: "CCB", name: "Hali ya Hewa, Jamii & Bioanuwai", desc: "Uthibitishaji wa ziada unaohakikisha miradi inatoa athari nzuri kwa mifumo ya kipekee ya Kenya na jamii za eneo.", stat: "Bioanuwai imethibitishwa" },
+        { code: "A6", name: "Kifungu 6 — Mkataba wa Paris", desc: "Kenya ilikuwa moja ya nchi za kwanza barani Afrika kuridhia masharti ya Kifungu 6, kuwezesha uuzaji wa mikopo ya kaboni ya nchi.", stat: "Kenya ilianzisha A6" },
+        { code: "REDD+", name: "Mfumo wa REDD+", desc: "Mfumo unaoshirikishwa na UN wa Kupunguza Uzalishaji kutoka Ukataji Miti — Misitu ya Bonde la Ufa ni miongoni mwa mandhari yanayostahili zaidi REDD+ Afrika.", stat: "Mfumo wa UN" },
+        { code: "NDC", name: "Mchango wa Kitaifa Uliowekwa", desc: "NDC ya Kenya ya 2030 iliyoimarishwa inakusudia kupunguza uzalishaji kwa 32%, ikiunda mwelekeo wa serikali kwa maendeleo ya masoko ya kaboni.", stat: "Lengo la kupunguza 32%" },
+      ],
+    },
+  },
+
+  flagship: {
+    en: {
+      label: "Featured Project",
+      title: "Rift Valley Montane Forest REDD+",
+      subtitle: "Kenya's most carbon-dense forest corridor — now generating internationally verified credits.",
+      location: "Rift Valley Province, Kenya — Mau Forest Complex",
+      area: "217,000 hectares",
+      status: "Active",
+      statusDesc: "Verra VCS registered",
+      description: "The Mau Forest Complex in Kenya's Rift Valley is the largest montane forest ecosystem in East Africa and the source of 12 major rivers. This REDD+ project protects 217,000 hectares of critical water tower habitat and high-density carbon forest from agricultural encroachment and illegal logging, while delivering direct income to surrounding Maasai and Ogiek communities.",
+      credentials: [
+        { label: "Registry", value: "Verra Verified Carbon Standard (VCS)" },
+        { label: "Methodology", value: "VM0015 — REDD+ Methodology Framework" },
+        { label: "Project Area", value: "217,000 hectares" },
+        { label: "Estimated Credits", value: "850,000 tCO₂ / year" },
+        { label: "Co-benefits", value: "CCB Standard — Maasai & Ogiek Community Benefits" },
+        { label: "Location", value: "Mau Forest Complex, Rift Valley" },
+      ],
+      impactTitle: "Project Impact",
+      impacts: [
+        { value: "850K", label: "tCO₂ credits per year" },
+        { value: "217K", label: "Hectares protected" },
+        { value: "8K+", label: "Community beneficiaries" },
+        { value: "12", label: "River catchments secured" },
+      ],
+      cta: "Request Project Details",
+    },
+    sw: {
+      label: "Mradi Maalum",
+      title: "REDD+ ya Msitu wa Milima ya Bonde la Ufa",
+      subtitle: "Ukanda wa msitu wenye kaboni nyingi zaidi Kenya — unaozalisha mikopo iliyothibitishwa kimataifa.",
+      location: "Mkoa wa Bonde la Ufa, Kenya — Mfumo wa Msitu wa Mau",
+      area: "Hekta 217,000",
+      status: "Inafanya Kazi",
+      statusDesc: "Imesajiliwa Verra VCS",
+      description: "Mfumo wa Msitu wa Mau katika Bonde la Ufa la Kenya ndio mfumo mkubwa wa msitu wa milima Afrika Mashariki na chanzo cha mito 12 mikubwa. Mradi huu wa REDD+ unalinda hekta 217,000 za makazi ya msitu wenye kaboni nyingi dhidi ya uvamizi wa kilimo na ukataji miti haramu, huku ukitoa mapato ya moja kwa moja kwa jamii za Maasai na Ogiek zinazozunguka.",
+      credentials: [
+        { label: "Rejesta", value: "Verra Verified Carbon Standard (VCS)" },
+        { label: "Mbinu", value: "VM0015 — Mfumo wa Mbinu za REDD+" },
+        { label: "Eneo la Mradi", value: "Hekta 217,000" },
+        { label: "Mikopo Inayokadiriwa", value: "Tani 850,000 CO₂ / mwaka" },
+        { label: "Manufaa ya Pamoja", value: "Kiwango cha CCB — Manufaa ya Jamii Maasai & Ogiek" },
+        { label: "Mahali", value: "Mfumo wa Msitu wa Mau, Bonde la Ufa" },
+      ],
+      impactTitle: "Athari za Mradi",
+      impacts: [
+        { value: "850K", label: "Mikopo ya tCO₂ kwa mwaka" },
+        { value: "217K", label: "Hekta zilizolindwa" },
+        { value: "8K+", label: "Wanajamii wanaonufaika" },
+        { value: "12", label: "Vyanzo vya mto vimehakikishiwa" },
+      ],
+      cta: "Omba Maelezo ya Mradi",
+    },
+  },
+
+  insights: {
+    en: {
+      label: "Market Intelligence",
+      title: "Kenya Carbon Market Insights",
+      subtitle: "Analysis on Kenya's carbon policy, project pipeline, and regional market developments.",
+      articles: [
+        { tag: "Policy", date: "May 2026", title: "Kenya Becomes Africa's First Nation to Launch Regulated Carbon Market Exchange", excerpt: "The Kenya Carbon Markets Authority has launched the country's first regulated voluntary carbon exchange, enabling domestic and international buyers to transact directly with Kenyan project developers.", href: "#what-is" },
+        { tag: "Projects", date: "April 2026", title: "Maasai Mara Community Carbon Projects Reach 500,000 tCO₂ in Annual Issuances", excerpt: "A coalition of 14 community-owned carbon projects across the Maasai Mara ecosystem has collectively reached 500,000 tCO₂ in annual verified issuances, delivering $4.2M in direct community revenue.", href: "#projects" },
+        { tag: "Science", date: "March 2026", title: "Kenya's Coastal Mangroves: A $1.2B Blue Carbon Opportunity Barely Tapped", excerpt: "New remote sensing data reveals Kenya has over 61,000 hectares of restorable mangrove habitat along its Indian Ocean coastline — enough to generate 600,000+ annual blue carbon credits.", href: "#projects" },
+      ],
+      readMore: "Read more",
+    },
+    sw: {
+      label: "Ujuzi wa Soko",
+      title: "Taarifa za Soko la Kaboni Kenya",
+      subtitle: "Uchambuzi wa sera za kaboni za Kenya, mchakato wa miradi, na maendeleo ya soko la kikanda.",
+      articles: [
+        { tag: "Sera", date: "Mei 2026", title: "Kenya Inakuwa Nchi ya Kwanza Afrika Kuzindua Soko la Kubadilishana Kaboni Lililodhibitiwa", excerpt: "Mamlaka ya Masoko ya Kaboni ya Kenya imezindua soko la kwanza la kubadilishana kaboni la hiari lililodhibitiwa nchini, kuwezesha wanunuzi wa ndani na kimataifa kufanya biashara moja kwa moja na waendelezaji wa miradi ya Kenya.", href: "#what-is" },
+        { tag: "Miradi", date: "Aprili 2026", title: "Miradi ya Kaboni ya Jamii ya Maasai Mara Inafikia Tani 500,000 CO₂ kwa Mwaka", excerpt: "Muungano wa miradi 14 inayomilikiwa na jamii katika mfumo wa Maasai Mara kwa pamoja umefikia tani 500,000 CO₂ katika michango ya kila mwaka iliyothibitishwa, ukitoa mapato ya $4.2M moja kwa moja kwa jamii.", href: "#projects" },
+        { tag: "Sayansi", date: "Machi 2026", title: "Mikoko ya Pwani ya Kenya: Fursa ya Kaboni ya Bluu ya $1.2B Inayotumiwa Kidogo", excerpt: "Data mpya ya uchanganuzi wa mbali inaonyesha Kenya ina zaidi ya hekta 61,000 za makazi ya mikoko inayoweza kurejeshwa kando ya pwani yake ya Bahari Hindi.", href: "#projects" },
+      ],
+      readMore: "Soma zaidi",
+    },
+  },
+
   footer: {
     sw: {
       tagline: "Kaboni ya Kenya — rasilimali ya Afrika Mashariki.",

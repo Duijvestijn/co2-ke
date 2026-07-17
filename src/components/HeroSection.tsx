@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useLang } from "@/lib/LangContext";
 import { translations } from "@/lib/translations";
 import { IMAGES } from "@/lib/images";
@@ -17,26 +16,20 @@ const FADE_UP = {
 export default function HeroSection() {
   const { lang } = useLang();
   const t = translations.hero[lang];
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end start"] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   return (
-    <section ref={containerRef} id="hero" className="relative min-h-screen flex flex-col justify-end overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-end overflow-hidden">
       {/* Background */}
-      <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
+      <div className="absolute inset-0">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${IMAGES.hero})` }} />
         {/* Left-to-right gradient for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-ke-dark/90 via-ke-dark/60 to-ke-dark/20" />
         {/* Bottom-up gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-ke-dark/80 via-transparent to-ke-dark/40" />
-      </motion.div>
+      </div>
 
       {/* Content — bottom-aligned, left-aligned */}
-      <motion.div style={{ y: textY, opacity }} className="relative z-10 max-w-6xl mx-auto px-6 w-full pb-24 pt-32">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full pb-24 pt-32">
         <div className="max-w-2xl">
           {/* Label */}
           <motion.div custom={0} variants={FADE_UP} initial="hidden" animate="visible" className="inline-flex items-center gap-2 mb-8">
@@ -82,7 +75,7 @@ export default function HeroSection() {
           <motion.div animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 2 }}
             className="w-px h-8 bg-gradient-to-b from-ke-red/60 to-transparent" />
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }

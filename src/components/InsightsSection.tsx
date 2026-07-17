@@ -60,7 +60,7 @@ export default function InsightsSection() {
             return (
               <motion.a
                 key={i}
-                href={article.href}
+                href={`/${lang}${article.href}`}
                 variants={FU(i * 0.1)}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}

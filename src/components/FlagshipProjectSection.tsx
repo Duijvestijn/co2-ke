@@ -62,7 +62,7 @@ export default function FlagshipProjectSection() {
               {/* Overlay badges */}
               <div className="absolute bottom-6 left-6 flex flex-wrap items-center gap-3">
                 <span className="px-3 py-1.5 rounded-full bg-ke-red text-white text-xs font-bold tracking-wide uppercase">
-                  REDD+
+                  VM0047 — Agroforestry
                 </span>
                 <span className="px-3 py-1.5 rounded-full bg-ke-green text-white text-xs font-semibold">
                   {t.status} — {t.statusDesc}
@@ -119,6 +119,13 @@ export default function FlagshipProjectSection() {
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
+              {t.registryUrl && (
+                <motion.a variants={FU(0.38)} initial="hidden" animate={inView ? "visible" : "hidden"}
+                  href={t.registryUrl} target="_blank" rel="noopener noreferrer"
+                  className="self-start mt-3 text-xs text-white/50 hover:text-ke-red flex items-center gap-1 transition-colors">
+                  {t.registryLabel}
+                </motion.a>
+              )}
             </div>
           </div>
         </motion.div>

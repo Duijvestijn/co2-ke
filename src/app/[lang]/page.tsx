@@ -4,7 +4,9 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ImpactStatsBar from "@/components/ImpactStatsBar";
 import WhatIsSection from "@/components/WhatIsSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import WhyKenyaSection from "@/components/WhyKenyaSection";
+import OpportunitySection from "@/components/OpportunitySection";
 import StandardsSection from "@/components/StandardsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import FlagshipProjectSection from "@/components/FlagshipProjectSection";
@@ -24,7 +26,9 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
         <HeroSection />
         <ImpactStatsBar />
         <WhatIsSection />
+        <HowItWorksSection />
         <WhyKenyaSection />
+        <OpportunitySection />
         <StandardsSection />
         <ProjectsSection />
         <FlagshipProjectSection />

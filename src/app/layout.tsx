@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     url: "https://co2.ke",
     title: "CO2.ke — Kenya's Carbon Market Gateway",
     description: "Kenya holds East Africa's greatest carbon potential.",
+    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "CO2.ke — Kenya Carbon Market Intelligence" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.svg"],
   },
   robots: { index: true, follow: true },
   metadataBase: new URL("https://co2.ke"),

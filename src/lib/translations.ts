@@ -534,4 +534,29 @@ export const translations = {
       copyright: "© 2026 CO2.ke",
     },
   },
+
+  faq: {
+    en: {
+      label: "Common Questions",
+      title: "What You Need to Know",
+      items: [
+        { q: "What are carbon credits and how are they verified?", a: "A carbon credit represents one verified tonne of CO₂ reduced or removed from the atmosphere. In Kenya, credits are independently audited under Verra VCS or Gold Standard standards before being issued — every credit carries a serial number traceable on public registries." },
+        { q: "How does Kenya's regulated carbon market work?", a: "The Kenya Carbon Markets Authority (KCMA), established under the Climate Change (Amendment) Act 2023, operates a regulated exchange where project developers can list and sell verified credits to domestic and international buyers. Kenya was Africa's first nation to launch a fully regulated voluntary carbon exchange in 2026." },
+        { q: "Who can buy Kenyan carbon credits?", a: "Any corporation, institution, or individual can purchase Kenyan carbon credits through the KCMA exchange or directly from project developers. Corporate buyers meeting TCFD, CSRD, or Science-Based Targets (SBTi) commitments are the primary market, alongside sovereign buyers seeking Article 6 ITMOs." },
+        { q: "How much of the revenue reaches local communities?", a: "Kenya's regulatory framework mandates a minimum of 40% of credit revenue flows directly to communities within or adjacent to project areas. This is enforced through KCMA-verified escrow arrangements, making Kenya's benefit-sharing model among the most stringent in Africa." },
+        { q: "How can Green Earth Group help with carbon projects in Kenya?", a: "Green Earth Group advises project developers, landowners, and investors on Verra VCS and Gold Standard registration, community benefit-sharing structures, Article 6 alignment, and buyer connections across Kenya's carbon markets. We are an implementation partner on multiple registered Kenyan projects." },
+      ],
+    },
+    sw: {
+      label: "Maswali ya Kawaida",
+      title: "Unachohitaji Kujua",
+      items: [
+        { q: "Mikopo ya kaboni ni nini na inathibitishwaje?", a: "Mkopo wa kaboni unawakilisha tani moja ya CO₂ iliyopunguzwa au kuondolewa kutoka angani kwa njia inayothibitishwa. Nchini Kenya, mikopo inakaguliwa kwa kujitegemea chini ya viwango vya Verra VCS au Gold Standard kabla ya kutolewa — kila mkopo una nambari ya mfululizo inayoweza kufuatiliwa katika rejista za umma." },
+        { q: "Soko la kaboni la Kenya linafanyaje kazi?", a: "Mamlaka ya Masoko ya Kaboni ya Kenya (KCMA), iliyoanzishwa chini ya Sheria ya Mabadiliko ya Tabianchi ya 2023, inasimamia soko linaloruhusu wasanidi miradi kuorodhesha na kuuza mikopo iliyothibitishwa kwa wanunuzi wa ndani na nje." },
+        { q: "Ni nani anayeweza kununua mikopo ya kaboni ya Kenya?", a: "Shirika lolote, taasisi, au mtu binafsi anaweza kununua mikopo ya kaboni ya Kenya kupitia soko la KCMA au moja kwa moja kutoka kwa wasanidi miradi. Wanunuzi wakuu ni makampuni yanayokidhi mahitaji ya TCFD, CSRD, au SBTi." },
+        { q: "Mapato mangapi yanafikia jamii za mitaa?", a: "Mfumo wa udhibiti wa Kenya unahitaji angalau 40% ya mapato ya mkopo kwenda moja kwa moja kwa jamii zilizo ndani au karibu na maeneo ya mradi, ikitekelezwa kupitia mfumo wa amana ulioidhinishwa na KCMA." },
+        { q: "Green Earth Group inawezaje kusaidia na miradi ya kaboni Kenya?", a: "Green Earth Group inashauri wasanidi miradi, wamiliki wa ardhi, na wawekezaji kuhusu usajili wa Verra VCS na Gold Standard, miundo ya faida ya jamii, na miunganisho ya wanunuzi katika masoko ya kaboni ya Kenya." },
+      ],
+    },
+  },
 };

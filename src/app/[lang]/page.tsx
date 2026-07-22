@@ -11,7 +11,9 @@ import StandardsSection from "@/components/StandardsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import FlagshipProjectSection from "@/components/FlagshipProjectSection";
 import InsightsSection from "@/components/InsightsSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import { translations } from "@/lib/translations";
 
 const SUPPORTED = ["sw", "en"];
 
@@ -19,8 +21,24 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
   if (!SUPPORTED.includes(lang)) notFound();
 
+  const l = lang as "en" | "sw";
+  const faqData = translations.faq[l];
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqData.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c") }}
+      />
       <Header />
       <main>
         <HeroSection />
@@ -33,6 +51,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
         <ProjectsSection />
         <FlagshipProjectSection />
         <InsightsSection />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />

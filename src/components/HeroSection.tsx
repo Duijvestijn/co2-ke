@@ -38,7 +38,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Title */}
-          <motion.h1 custom={1} variants={FADE_UP} initial="hidden" animate="visible"
+          <motion.h1 custom={1} variants={FADE_UP} initial={{ opacity: 1, y: 0 }} animate="visible"
             className="font-serif text-6xl sm:text-7xl md:text-8xl font-bold leading-[1.0] text-white mb-4">
             {t.titleLine1}
           </motion.h1>

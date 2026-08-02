@@ -559,4 +559,28 @@ export const translations = {
       ],
     },
   },
+  newsletter: {
+    en: {
+      label: "Stay Informed",
+      title: "Carbon Market Intelligence, Direct to Your Inbox",
+      subtitle: "Weekly insights on Kenya's carbon markets, project opportunities, and Article 6 developments.",
+      placeholder: "your@email.com",
+      namePlaceholder: "First name (optional)",
+      button: "Subscribe",
+      success: "You're subscribed. Welcome to the Kenya Carbon Markets newsletter.",
+      error: "Something went wrong. Please try again.",
+      privacy: "No spam. Unsubscribe anytime.",
+    },
+    sw: {
+      label: "Endelea Kufahamishwa",
+      title: "Habari za Soko la Kaboni, Moja kwa Moja Kwako",
+      subtitle: "Taarifa za kila wiki kuhusu masoko ya kaboni ya Kenya, fursa za miradi, na maendeleo ya Kifungu cha 6.",
+      placeholder: "barua.pepe@mfano.com",
+      namePlaceholder: "Jina la kwanza (si lazima)",
+      button: "Jiandikishe",
+      success: "Umejisajili. Karibu kwenye jarida la Masoko ya Kaboni ya Kenya.",
+      error: "Hitilafu imetokea. Tafadhali jaribu tena.",
+      privacy: "Hakuna barua taka. Jitoe wakati wowote.",
+    },
+  },
 };

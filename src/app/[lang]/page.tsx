@@ -11,6 +11,7 @@ import StandardsSection from "@/components/StandardsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import FlagshipProjectSection from "@/components/FlagshipProjectSection";
 import InsightsSection from "@/components/InsightsSection";
+import NewsletterSection from "@/components/NewsletterSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import { translations } from "@/lib/translations";
@@ -51,6 +52,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
         <ProjectsSection />
         <FlagshipProjectSection />
         <InsightsSection />
+        <NewsletterSection />
         <FAQSection />
         <ContactSection />
       </main>

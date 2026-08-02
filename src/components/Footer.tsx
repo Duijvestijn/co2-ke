@@ -89,6 +89,32 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Related Carbon Markets horizontal bar */}
+        <div className="border-t border-white/[0.08] pt-8 mb-8">
+          <p className="text-xs uppercase tracking-widest text-white/40 font-bold mb-3">
+            {lang === "sw" ? "Masoko Yanayohusiana ya Kaboni" : "Related Carbon Markets"}
+          </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
+            {[
+              { name: "CO2.africa", url: "https://co2.africa", label: "Africa" },
+              { name: "CO2.ug", url: "https://co2.ug", label: "Uganda" },
+              { name: "CO2.cm", url: "https://co2.cm", label: "Cameroon" },
+              { name: "Biodiversity.ae", url: "https://biodiversity.ae", label: "UAE" },
+              { name: "CarbonCredits.kz", url: "https://carboncredits.kz", label: "Kazakhstan" },
+            ].map(site => (
+              <a
+                key={site.url}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-white/50 hover:text-white transition-colors"
+              >
+                {site.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="border-t border-white/[0.08] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="text-white/30 text-xs">{t.copyright}</p>
           <span className="text-white/20 text-xs">

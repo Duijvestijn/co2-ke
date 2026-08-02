@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://co2.ke
+
+# Sitemaps
 Sitemap: https://co2.ke/sitemap.xml

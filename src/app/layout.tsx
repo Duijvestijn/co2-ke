@@ -7,16 +7,24 @@ import Script from "next/script";
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "CO2.ke",
-  alternateName: ["Kenya Carbon Credits", "Mikopo ya Kaboni Kenya"],
+  name: "CO2 Kenya",
   url: "https://co2.ke",
-  description:
-    "Kenya's carbon market gateway — Mount Kenya agroforestry, Maasai Mara savannas, and coastal mangroves under Verra VCS and Gold Standard.",
-  areaServed: { "@type": "Country", name: "Kenya" },
-  knowsAbout: [
-    "Carbon Credits Kenya", "Nature Restoration Kenya", "Mount Kenya Agroforestry",
-    "Maasai Mara Carbon", "Mangrove Restoration Kenya", "Verra VCS Kenya", "Kenya NDC",
-  ],
+  description: "Kenya carbon credit markets — project intelligence, Article 6 developments, and investment opportunities.",
+  sameAs: ["https://co2.africa", "https://co2.ug"],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "CO2.ke",
+  url: "https://co2.ke",
+  inLanguage: ["en", "sw"],
+  description: "Kenya carbon markets intelligence platform.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://co2.ke/en/blog?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export const metadata: Metadata = {
@@ -56,6 +64,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd).replace(/</g, "\\u003c") }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, "\\u003c") }}
         />
       </head>
       <Script id="gtm-loader" strategy="afterInteractive">

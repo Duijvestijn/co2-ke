@@ -120,6 +120,94 @@ export const posts: Post[] = [
     },
   },
   {
+    slug: "kenya-iea-clean-cooking-partner",
+    date: "2026-07-09",
+    lang: {
+      en: {
+        title: "Kenya Named IEA Partner in $900M Global Clean Cooking Initiative",
+        excerpt: "The International Energy Agency named Kenya as one of three co-chairing governments in its landmark clean cooking financing effort, which has now mobilised $740 million across 22 African countries.",
+        content: `<p>In July 2026, the International Energy Agency (IEA) confirmed that Kenya is one of three governments — alongside the United States and Norway — co-chairing the global clean cooking financing initiative launched at the IEA's inaugural Clean Cooking Summit two years ago. The update came at a virtual high-level meeting that reported $740 million already deployed across 22 African countries, out of a total $2.2 billion pool of commitments.</p>
+
+<h2>A Landmark Commitment</h2>
+<p>The clean cooking initiative aims to expand access to clean cooking technology for hundreds of millions of Africans before 2030. Kenya's co-chairing role signals its position not just as a recipient country, but as a continental leader in shaping clean energy access policy. LPG accounted for 70% of new access to clean cooking achieved under the initiative so far.</p>
+
+<p>Carbon markets play a supporting role: they account for approximately 12% of total financing for clean cooking in Africa — smaller than development finance or sovereign commitments, but growing as Gold Standard and Verra methodologies for cookstoves mature and Corsia demand increases. Kenya already hosts some of the continent's most advanced cookstove projects, with Burn Manufacturing's Kenya project (VCS5642) issuing 52,405 tCO2e of vintage 2025 credits in July 2026.</p>
+
+<h2>Context: Gulf LPG Disruption</h2>
+<p>The IEA meeting was originally scheduled as an in-person event in Nairobi, but was moved online due to the US-Iran war and related disruptions. The conflict caused an 80% drop in LPG shipments from the Gulf to Africa — a reminder that energy security and clean cooking access are deeply interlinked with geopolitics. This supply shock has raised the urgency of diversifying away from imported LPG toward locally-produced clean cooking solutions, including biogas and advanced cookstoves.</p>
+
+<h2>What It Means for Kenya's Carbon Market</h2>
+<p>Kenya's co-chairing role opens doors to multilateral finance flows, policy coordination with major donor governments, and a higher international profile for Kenyan carbon project developers. Combined with the country's existing Article 6 bilateral agreements and strong REDD+ pipeline, Kenya is consolidating its position as East Africa's most developed carbon market destination.</p>
+
+<p>Related: <a href="/en/blog/article-6-east-central-africa">Article 6 in East and Central Africa: Where Does Kenya Stand?</a></p>`,
+      },
+      sw: {
+        title: "Kenya Imeteuliwa Mshirika wa IEA katika Mpango wa $900M wa Kupikia Safi Duniani",
+        excerpt: "Shirika la Kimataifa la Nishati (IEA) limetaja Kenya kama moja ya serikali tatu zinazosimamia mpango wa ufadhili wa kupikia safi duniani, ambao umeshachangisha $740M katika nchi 22 za Afrika.",
+        content: `<p>Mnamo Julai 2026, Shirika la Kimataifa la Nishati (IEA) lilithibitisha kwamba Kenya ni moja ya serikali tatu — pamoja na Marekani na Norway — zinazoshirikiana kuongoza mpango wa ufadhili wa kupikia safi duniani uliozinduliwa katika Mkutano wa kwanza wa Kupikia Safi wa IEA miaka miwili iliyopita. Taarifa hiyo ilitolewa katika mkutano wa hali ya juu wa mtandao uliripoti dola milioni 740 tayari zimepelekwa katika nchi 22 za Afrika, kati ya dola bilioni 2.2 za ahadi zote.</p>
+
+<h2>Ahadi ya Kipekee</h2>
+<p>Mpango wa kupikia safi unalenga kupanua upatikanaji wa teknolojia ya kupikia safi kwa mamia ya mamilioni ya Waafrika kabla ya 2030. Jukumu la Kenya la kushirikiana kuongoza linaionyesha sio tu kama nchi inayopokea msaada, bali kama kiongozi wa bara katika kuunda sera ya upatikanaji wa nishati safi. LPG ilichangia 70% ya upatikanaji mpya wa kupikia safi uliofikiwa chini ya mpango hadi sasa.</p>
+
+<p>Masoko ya kaboni yana jukumu la msaada: yanachangia takriban 12% ya ufadhili wote wa kupikia safi barani Afrika — kidogo kuliko fedha za maendeleo au ahadi za nchi, lakini inakua kadri mbinu za Gold Standard na Verra za majiko ya kupikia zinavyokomaa na mahitaji ya Corsia yanapoongezeka. Kenya tayari inashikilia baadhi ya miradi ya kisasa zaidi ya majiko ya kupikia barani, na mradi wa Kenya wa Burn Manufacturing (VCS5642) ukitoa hati za kaboni za tCO2e 52,405 za msimu wa 2025 mnamo Julai 2026.</p>
+
+<h2>Muktadha: Msongo wa LPG kutoka Ghuba</h2>
+<p>Mkutano wa IEA ulikuwa umepangwa awali kama tukio la ana kwa ana Nairobi, lakini ulihamishwa mtandaoni kwa sababu ya vita vya Marekani-Iran na usumbufu unaohusiana. Mgogoro huo ulisababisha kushuka kwa 80% kwa usafirishaji wa LPG kutoka Ghuba kwenda Afrika — ukumbusho kwamba usalama wa nishati na upatikanaji wa kupikia safi vimeunganishwa kwa kina na siasa za kimataifa. Mshtuko huu wa ugavi umeongeza dharura ya kutofautisha mbali na LPG inayoingizwa kuelekea suluhisho za kupikia safi zinazozalishwa ndani, ikiwa ni pamoja na biogesi na majiko ya kisasa.</p>
+
+<h2>Maana kwa Soko la Kaboni la Kenya</h2>
+<p>Jukumu la Kenya la kushirikiana kuongoza linafungua milango ya mtiririko wa fedha za kimataifa, uratibu wa sera na serikali kuu za wafadhili, na wasifu wa juu wa kimataifa kwa waendelezaji wa miradi ya kaboni ya Kenya. Ikiunganishwa na makubaliano ya pande mbili ya Kifungu cha 6 ya nchi na mstari imara wa REDD+, Kenya inaimarisha nafasi yake kama lengo la soko la kaboni lililoendelezwa zaidi Afrika Mashariki.</p>
+
+<p>Soma pia: <a href="/sw/blog/article-6-east-central-africa">Kifungu cha 6 Afrika Mashariki na Kati: Kenya Iko Wapi?</a></p>`,
+      },
+    },
+  },
+  {
+    slug: "ascent-ppf-east-africa",
+    date: "2026-07-13",
+    lang: {
+      en: {
+        title: "Ascent PPF: $25M World Bank Facility Opens for East African Clean Energy Projects",
+        excerpt: "A $25 million World Bank-backed Project Preparation Facility has launched a call for proposals from clean cooking and energy access companies in 16 East and Southern African countries including Kenya and Uganda. Applications close August 31, 2026.",
+        content: `<p>A $25 million financing facility — the Ascent Project Preparation Facility (PPF) — has opened applications for companies in the clean cooking and energy access sector across 16 East and Southern African countries. The facility is funded by the World Bank and Comesa (a Lusaka-based multilateral finance vehicle), and managed by London-based Cygnum Capital.</p>
+
+<h2>Who Can Apply</h2>
+<p>Eligible countries include Kenya, Uganda, Tanzania, Ethiopia, Rwanda, the DRC, Burundi, Comoros, Lesotho, Madagascar, Malawi, Mozambique, São Tomé and Príncipe, Somalia, South Sudan, and Zambia. Applicants must be registered in one of these countries, have operated for at least three years, and have paying customers and a minimum annual revenue of $250,000 (solar home systems) or $150,000 (clean cooking, minigrids, productive use energy).</p>
+
+<p>The facility offers milestone-based grants of $50,000–$200,000 for project preparation and business development — the stage of the pipeline that is most underfunded in East Africa's clean energy sector.</p>
+
+<h2>Why This Matters for Carbon Markets</h2>
+<p>Cookstove and clean energy projects in East Africa are among the most active generators of voluntary carbon credits globally. Kenya hosts projects like Burn Manufacturing's VCS5642 (52,405 tCO2e vintage 2025 issued in July 2026), and Uganda-based UpEnergy recently secured a 3.8 million tCO2e Letter of Authorisation from Nigeria under Article 6. However, the project development phase — from concept to registration — remains a capital bottleneck. The Ascent PPF directly addresses this gap.</p>
+
+<p>For developers who can meet Ascent's eligibility criteria, the combination of grant-based project preparation support and Kenya's growing carbon market infrastructure makes 2026 a strong moment to advance pipeline projects.</p>
+
+<h2>Timeline</h2>
+<p>Applications opened in July 2026. The first submission window closes <strong>August 31, 2026</strong>. Interested developers should begin preparing applications now.</p>
+
+<p>Related: <a href="/en/blog/redd-plus-east-central-africa">REDD+ Across Borders: Kenya, Uganda and the Congo Basin</a></p>`,
+      },
+      sw: {
+        title: "Ascent PPF: Shirika la $25M la Benki ya Dunia Linafungua kwa Miradi ya Nishati Mashariki mwa Afrika",
+        excerpt: "Mfuko wa $25M wa Maandalizi ya Miradi (PPF) uliofadhiliwa na Benki ya Dunia umefungua maombi kwa makampuni ya nishati safi katika nchi 16 za Afrika Mashariki na Kusini, ikiwemo Kenya na Uganda. Mwisho wa maombi: Agosti 31, 2026.",
+        content: `<p>Mfuko wa ufadhili wa dola milioni 25 — Ascent Project Preparation Facility (PPF) — umefungua maombi kwa makampuni katika sekta ya kupikia safi na upatikanaji wa nishati katika nchi 16 za Afrika Mashariki na Kusini. Mfuko huu unafadhiliwa na Benki ya Dunia na Comesa (chombo cha fedha cha kimataifa chenye makao Lusaka), na unaosimamiwa na Cygnum Capital, London.</p>
+
+<h2>Nani Anaweza Kuomba</h2>
+<p>Nchi zinazostahiki ni pamoja na Kenya, Uganda, Tanzania, Ethiopia, Rwanda, DRC, Burundi, Comoro, Lesotho, Madagascar, Malawi, Msumbiji, São Tomé na Príncipe, Somalia, Sudan Kusini, na Zambia. Waombaji lazima wasajiliwe katika moja ya nchi hizi, wafanye kazi kwa angalau miaka mitatu, na wawe na wateja wanaolipa na mapato ya chini ya kila mwaka ya $250,000 (mifumo ya jua ya nyumbani) au $150,000 (kupikia safi, minigrids, nishati ya matumizi ya uzalishaji).</p>
+
+<p>Mfuko unatoa ruzuku zinazotegemea hatua za $50,000–$200,000 kwa maandalizi ya mradi na maendeleo ya biashara — hatua ya mstari wa miradi ambayo imepata ufadhili mdogo zaidi katika sekta ya nishati safi ya Afrika Mashariki.</p>
+
+<h2>Kwa Nini Hii ni Muhimu kwa Masoko ya Kaboni</h2>
+<p>Miradi ya majiko ya kupikia na nishati safi Afrika Mashariki ipo miongoni mwa wazalishaji hai zaidi wa hati za kaboni za hiari duniani. Kenya inashikilia miradi kama VCS5642 ya Burn Manufacturing (tCO2e 52,405 za msimu wa 2025 zilizotolewa Julai 2026), na UpEnergy ya Uganda hivi karibuni ilipata Barua ya Idhini ya tCO2e milioni 3.8 kutoka Nigeria chini ya Kifungu cha 6. Hata hivyo, awamu ya maendeleo ya mradi — kutoka dhana hadi usajili — bado inabaki kizuizi cha mtaji. Ascent PPF inashughulikia moja kwa moja pengo hili.</p>
+
+<p>Kwa waendelezaji wanaoweza kukidhi vigezo vya ustahiki vya Ascent, mchanganyiko wa msaada wa maandalizi ya mradi unaotegemea ruzuku na miundombinu inayokua ya soko la kaboni ya Kenya unafanya 2026 kuwa wakati mzuri wa kuendeleza miradi ya mstari.</p>
+
+<h2>Ratiba</h2>
+<p>Maombi yalifunguliwa Julai 2026. Dirisha la kwanza la uwasilishaji linafunga <strong>Agosti 31, 2026</strong>. Waendelezaji wanaovutiwa waanze kuandaa maombi sasa hivi.</p>
+
+<p>Soma pia: <a href="/sw/blog/redd-plus-east-central-africa">REDD+ Kuvuka Mipaka: Kenya, Uganda na Bonde la Kongo</a></p>`,
+      },
+    },
+  },
+  {
     slug: "redd-plus-east-central-africa",
     date: "2026-08-02",
     lang: {

@@ -65,7 +65,7 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between gap-6">
         {/* Logo */}
-        <a href="/sw" className="flex-shrink-0 group">
+        <a href={`/${lang}`} className="flex-shrink-0 group">
           <span className="font-serif font-bold text-[17px] leading-none tracking-tight">
             <span className="text-ke-red group-hover:text-ke-red-light transition-colors">CO</span>
             <span className="text-ke-red group-hover:text-ke-red-light transition-colors">2</span>

@@ -1,8 +1,17 @@
 import { ImageResponse } from 'next/og'
 import { posts } from '@/lib/posts'
 
+export const dynamic = "force-static"
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
+
+const SUPPORTED = ["en", "sw"]
+
+export function generateStaticParams() {
+  return SUPPORTED.flatMap((lang) =>
+    posts.map((p) => ({ lang, slug: p.slug }))
+  )
+}
 
 export default async function Image({ params }: { params: Promise<{ lang: string; slug: string }> }) {
   const { lang, slug } = await params
